@@ -1,0 +1,22 @@
+//! **************************************************************************
+// Written by: Map P.20131013 on Sun May 01 18:17:58 2016
+//! **************************************************************************
+
+SCHEMATIC START;
+COMP "clk" LOCATE = SITE "P127" LEVEL 1;
+COMP "left" LOCATE = SITE "P44" LEVEL 1;
+COMP "vga_h_sync" LOCATE = SITE "P135" LEVEL 1;
+COMP "vga_v_sync" LOCATE = SITE "P140" LEVEL 1;
+COMP "right" LOCATE = SITE "P46" LEVEL 1;
+COMP "reset" LOCATE = SITE "P47" LEVEL 1;
+PIN reset_pin<0> = BEL "reset" PINNAME PAD;
+PIN "reset_pin<0>" CLOCK_DEDICATED_ROUTE = FALSE;
+COMP "start" LOCATE = SITE "P50" LEVEL 1;
+PIN start_pin<0> = BEL "start" PINNAME PAD;
+PIN "start_pin<0>" CLOCK_DEDICATED_ROUTE = FALSE;
+COMP "vga_B" LOCATE = SITE "P6" LEVEL 1;
+COMP "vga_G" LOCATE = SITE "P4" LEVEL 1;
+COMP "vga_R" LOCATE = SITE "P1" LEVEL 1;
+NET "clk_BUFGP/IBUFG" BEL "clk_BUFGP/BUFG.GCLKMUX" USELOCALCONNECT;
+SCHEMATIC END;
+

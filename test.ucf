@@ -1,0 +1,12 @@
+NET "clk" LOC=p127;
+NET "vga_h_sync" LOC = p135;
+NET "vga_v_sync" LOC = p140;
+NET "vga_B" LOC = p6;
+NET "vga_G" LOC = p4;
+NET "vga_R" LOC = p1;
+NET "left" LOC = p44;
+NET "right" LOC = p46;
+NET "reset" LOC = p47;
+NET "start" LOC = p50;
+NET "reset" CLOCK_DEDICATED_ROUTE = FALSE;
+NET "start"  CLOCK_DEDICATED_ROUTE = FALSE;

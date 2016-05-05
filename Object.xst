@@ -1,0 +1,5 @@
+set -tmpdir "E:/kmutt work/final_project/On_the_run/xst/projnav.tmp"
+set -xsthdpdir "E:/kmutt work/final_project/On_the_run/xst"
+elaborate
+-ifn Object.prj
+-ifmt mixed
